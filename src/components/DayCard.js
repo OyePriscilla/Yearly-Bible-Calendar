@@ -1,0 +1,3 @@
+import { jsxs as _jsxs } from "react/jsx-runtime";
+const DayCard = ({ date, readings }) => (_jsxs("div", { className: "p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition", children: [_jsxs("h3", { className: "text-xl font-semibold text-blue-700", children: ["Day ", date] }), _jsxs("p", { className: "text-gray-600", children: ["\uD83D\uDCD6 ", readings["Old Testament I"]] }), _jsxs("p", { className: "text-gray-600", children: ["\uD83D\uDCD6 ", readings["Old Testament II"]] }), _jsxs("p", { className: "text-gray-600", children: ["\uD83D\uDCD6 ", readings["New Testament"]] })] }));
+export default DayCard;

@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-100 text-gray-800;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  h1, h2, h3 {
+    @apply text-blue-700;
+
+  }
+
+  p {
+    @apply text-gray-600;
+  }
+
+  aside {
+    @apply shadow-lg rounded-md;
+  }
+   .dark-mode {
+    background-color: #1a202c;
+    color: #f7fafc;
+  }
