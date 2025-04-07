@@ -40,9 +40,6 @@ git clone https://github.com/OyePriscilla/Yearly-Bible-Calendar.git
 2. Install Dependencies
 Navigate to the project directory and install the necessary dependencies:
 
-bash
-Copy
-Edit
 cd Yearly-Bible-Calendar
 npm install
 3. Configure API Key
@@ -52,16 +49,14 @@ Sign up at API.Bible and get your API key.
 
 Create a .env file in the root of the project and add the following:
 
-bash
-Copy
+
 Edit
 VITE_BIBLE_API_KEY=your_api_key_here
 4. Run the Application Locally
 To run the application locally, use the following command:
 
-bash
-Copy
-Edit
+
+
 npm run dev
 The app should now be running on http://localhost:3000.
 
@@ -109,7 +104,7 @@ For any questions or inquiries, feel free to reach out to:
 
 Author: OyePriscilla
 
-Email: oyepriscilla@example.com
+Email: oyebadepriscilla22@gmail.com
 
 GitHub: https://github.com/OyePriscilla
 
