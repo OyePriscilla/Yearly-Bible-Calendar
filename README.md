@@ -1,54 +1,119 @@
-# React + TypeScript + Vite
+# Yearly Bible Calendar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+The **Yearly Bible Calendar** is a web application designed to help users read the Bible systematically throughout the year. It provides daily readings from both the **Old Testament** and **New Testament**, with an easy-to-navigate interface and features such as tracking reading progress, bookmarking verses, and switching between different Bible versions (e.g., English and Yoruba).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The app uses React, TypeScript, Vite, and Tailwind CSS for a smooth and responsive user experience. It also integrates with the **API.Bible** to pull Bible data and readings.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Daily Bible Readings**: Display a daily portion from the **Old Testament**, **New Testament**, or **Both**, helping users read through the Bible in a year.
+- **Light and Dark Mode**: Easily toggle between light and dark modes for a more personalized reading experience.
+- **Bible Versions**: Choose between the **English** and **Yoruba** versions of the Bible.
+- **Bookmarking**: Save your favorite Bible verses for quick access later.
+- **Calendar Integration**: View and track Bible readings on a calendar.
+- **Progress Tracking**: Mark completed readings and track your progress throughout the year.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Technology Stack
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Frontend**: React, TypeScript, Vite
+- **Styling**: Tailwind CSS
+- **API**: API.Bible (for fetching Bible data)
+- **Hosting**: Vercel (for free deployment)
+
+---
+
+## Setup and Installation
+
+### 1. **Clone the Repository**
+
+Start by cloning the project to your local machine:
+
+```bash
+git clone https://github.com/OyePriscilla/Yearly-Bible-Calendar.git
+
+2. Install Dependencies
+Navigate to the project directory and install the necessary dependencies:
+
+bash
+Copy
+Edit
+cd Yearly-Bible-Calendar
+npm install
+3. Configure API Key
+The project uses API.Bible to fetch Bible data. To configure the API key, follow these steps:
+
+Sign up at API.Bible and get your API key.
+
+Create a .env file in the root of the project and add the following:
+
+bash
+Copy
+Edit
+VITE_BIBLE_API_KEY=your_api_key_here
+4. Run the Application Locally
+To run the application locally, use the following command:
+
+bash
+Copy
+Edit
+npm run dev
+The app should now be running on http://localhost:3000.
+
+Features Breakdown
+1. Home Page
+The home page allows users to choose between Yoruba or English Bible versions. It also provides an option to view the Bible Calendar.
+
+2. Bible Calendar
+This page allows users to view and interact with the Bible readings for the year. Users can select between Old Testament, New Testament, or Both and track their daily readings.
+
+3. Bible Page
+On the Bible page, users can choose a Book and Chapter from the selected Bible version. Each chapter displays the verses, and users can read and bookmark them.
+
+4. Bookmarking Verses
+Users can bookmark their favorite Bible verses to access later. Bookmarked verses are saved in local storage for future sessions.
+
+5. Light and Dark Mode
+The app supports both Light Mode and Dark Mode, which can be toggled by the user for a better reading experience.
+
+Contribution
+Contributions are welcome! If you would like to contribute to the project, feel free to fork the repository, make changes, and submit a pull request. Please follow the steps below to contribute:
+
+Fork the repository.
+
+Create a new branch (git checkout -b feature-name).
+
+Make your changes.
+
+Commit your changes (git commit -m 'Add new feature').
+
+Push your changes to your forked repository (git push origin feature-name).
+
+Submit a pull request.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgements
+The Yearly Bible Calendar was inspired by the work of Henry Groves, the creator of the original Yearly Bible Calendar.
+
+Thanks to API.Bible for providing an easy-to-use Bible API for fetching data.
+
+Contact
+For any questions or inquiries, feel free to reach out to:
+
+Author: OyePriscilla
+
+Email: oyepriscilla@example.com
+
+GitHub: https://github.com/OyePriscilla
+
+Thank you for using the Yearly Bible Calendar app! We hope it enriches your Bible reading journey.
+
+### Final Notes:
+Once the file is created and saved in the project folder as `README.md`, it will be available to anyone who views the project on GitHub or any other repository hosting platform.
