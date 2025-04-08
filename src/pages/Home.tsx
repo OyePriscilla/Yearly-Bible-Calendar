@@ -56,10 +56,9 @@ const HomePage = () => {
 
       {randomVerse && (
         <div className="p-4 bg-blue-100 dark:bg-gray-800 rounded-lg shadow-md">
-          <h2 className="text-2xl font-bold text-blue-600 mb-2">
-          <h1>Bible Verse for Today</h1>
+          <h1 className="text-2xl font-bold text-blue-600 mb-2">
             📖 {randomVerse.reference}
-          </h2>
+          </h1>
           <p className="text-lg text-gray-700 dark:text-white whitespace-pre-wrap">
             {randomVerse.text}
           </p>
